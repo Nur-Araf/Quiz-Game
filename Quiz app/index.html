@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+  <script src="https://cdn.tailwindcss.com"></script>  
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body class="text-[#1670f0]">
+  <div class="video-container">
+    <video autoplay loop muted playsinline id="backgroundVideo">
+      <source src="video/night1.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <h1 class="text-center tracking-widest text-2xl font-bold mt-4 p-3 shadow-[2px_5px_10px_px] shadow-[#1670f0]">
+    Quiz App
+  </h1>
+
+  <div class="Information flex items-center justify-evenly m-4 p-2 shadow-[2px_2px_2px_2px] shadow-[#1670f0]">
+    <div class="flex items-center justify-between p-4">
+      <h2 class="text-xl font-bold tracking-widest">Asked Me a Question?</h2>
+      <button
+        class="btn tracking-widest text-xl font-bold ml-3 p-2 rounded-lg hover:shadow-[1px_1px_1px_1px] hover:shadow-white"
+        id="js-ask">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Ask
+      </button>
+      <i class="ri-question-answer-line ml-3 text-xl font-medium"></i>
+    </div>
+
+    <div class="text-xl font-bold tracking-widest">
+      <h2>Point : <span id="js-point"></span></h2>
+    </div>
+  </div>
+
+  <div class="text-center mt-10">
+    <h2 class="m-4 p-4 text-xl font-semibold tracking-widest">
+      Question : <span id="js-question"></span>
+    </h2>
+    <input type="text" class="m-4 p-4 text-xl rounded-xl text-[#1670f0] font-bold tracking-widest" id="input-answer" />
+    <button
+      class="btn tracking-widest font-semibold text-xl m-2 p-4 rounded-lg hover:shadow-[1px_1px_1px_1px] hover:shadow-white"
+      id="js-enter">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Enter
+    </button>
+    <h2 class="font-semibold text-xl m-2 p-4 tracking-widest" id="js-answer"></h2>
+    <div class="flex items-center justify-evenly">
+      <button
+        class="btn font-semibold tracking-widest text-xl m-2 p-4 rounded-lg hover:shadow-[1px_1px_1px_1px] hover:shadow-white"
+        id="js-nextQ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Next Question
+      </button>
+      <button
+        class="btn font-semibold text-xl tracking-widest m-2 p-4 rounded-lg hover:shadow-white hover:shadow-[1px_1px_1px_1px]"
+        id="js-showA">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Show Answer
+      </button>
+    </div>
+    <p class="font-semibold text-xl m-2 p-4 tracking-widest" id="js-givenA"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
